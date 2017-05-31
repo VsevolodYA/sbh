@@ -1,0 +1,54 @@
+<div class="privilege-and-responsibility container" scroll-top>
+
+    <div class="panel panel-default margin-t-40">
+
+        <div class="panel-body">
+
+            <button-switch visible="showVideoBlock"></button-switch>
+
+            <video-block visible="showVideoBlock"></video-block>
+
+        </div>
+
+    </div>
+
+    <div class="panel panel-default margin-t-40">
+
+        <div class="panel-body static-text-panel">
+
+            <button-switch visible="showStaticTextBlock"></button-switch>
+
+            <business-static-text visible="showStaticTextBlock"></business-static-text>
+
+        </div>
+
+    </div>
+
+    <div class="panel panel-default margin-t-40" ng-class="{'margin-b-140': !showInfoBlock}">
+
+        <div class="panel-body">
+
+            <button-switch visible="showDropdownBlock"></button-switch>
+
+            <h3 class="logo padding-l-15">business<span class="aqua-green">work</span></h3>
+
+            <div class="sample-show-hide" ng-hide="showDropdownBlock">
+
+                <!--<div class="row content-margin">-->
+                <div class="col-md-12">
+                    <div class="custom-rzslider" ng-repeat="slide in data">
+                        <p>{{ slide.name }}</p>
+                        <span class="position-left">{{ slide.left }}</span>
+                        <span class="position-right">{{ slide.right }}</span>
+                        <rzslider rz-slider-model="slide.value"
+                                  rz-slider-options="slide.options"></rzslider>
+                    </div>
+                </div>
+                <!--</div>-->
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<business-footer send="sendData()" forward="forward"></business-footer>

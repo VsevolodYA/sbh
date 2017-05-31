@@ -1,0 +1,64 @@
+<div class="business-page container" scroll-top>
+
+    <div class="panel panel-default margin-t-40 margin-b-140">
+
+        <div class="panel-body">
+
+            <button-switch visible="showVideoBlock"></button-switch>
+
+            <video-block visible="showVideoBlock"></video-block>
+
+        </div>
+
+    </div>
+
+    <div class="panel panel-default margin-t-40">
+
+        <div class="panel-body static-text-panel">
+
+            <button-switch visible="showStaticTextBlock"></button-switch>
+
+            <business-static-text visible="showStaticTextBlock"></business-static-text>
+
+        </div>
+
+    </div>
+
+    <div class="panel panel-default margin-t-40 margin-b-140">
+
+        <div class="panel-body">
+
+            <button-switch visible="showContent"></button-switch>
+
+            <h3 class="logo padding-l-15">business<span class="aqua-green">work</span></h3>
+
+            <div class="col-md-10 sample-show-hide" ng-hide="showContent">
+                <p class="line-text">
+
+                    <span class="aqua-green">{{businessName}}</span>
+
+                    <span editable-select model-value="data.first" values-list="first"></span>
+
+                    <span editable-text model-value="data.second"></span>
+
+                    <span editable-select model-value="data.third" values-list="third"></span>
+
+                    <span editable-text model-value="data.fourth"></span>
+
+                    on a <span class="aqua-green" editable-select model-value="data.fifth" values-list="fifth"></span>
+                    scale because I will grow my business this year I will be able to
+                    <span class="aqua-green" editable-select model-value="privilegeInfo.resultId" values-list="privilegesData.resultList"></span>
+                    and I
+                    am committed to
+                    <span class="aqua-green" editable-select model-value="privilegeInfo.text" values-list="privilegesData.second"></span>
+                    <span class="aqua-green" editable-text model-value="privilegeInfo.additionalText"></span>.
+
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<business-footer send="sendData()" forward="forward"></business-footer>

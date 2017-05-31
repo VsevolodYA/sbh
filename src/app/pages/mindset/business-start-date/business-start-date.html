@@ -1,0 +1,61 @@
+<div class="business-start-date container" scroll-top>
+
+    <div class="panel panel-default margin-t-40">
+
+        <div class="panel-body">
+
+            <button-switch visible="showVideoBlock"></button-switch>
+
+            <video-block visible="showVideoBlock"></video-block>
+
+        </div>
+
+    </div>
+
+    <div class="panel panel-default margin-t-40">
+
+        <div class="panel-body static-text-panel">
+
+            <button-switch visible="showStaticTextBlock"></button-switch>
+
+            <business-static-text visible="showStaticTextBlock"></business-static-text>
+
+        </div>
+
+    </div>
+
+    <div class="panel panel-default margin-t-40 margin-b-140">
+
+        <div class="panel-body">
+
+            <button-switch visible="showStartDate"></button-switch>
+
+            <h3 class="logo padding-l-15">business<span class="aqua-green">work</span></h3>
+
+            <div class="col-md-12 sample-show-hide" ng-hide="showStartDate">
+                <h4>Choose Your Start Date</h4>
+
+                <p>I will start to put my business into Action no later than the first day of <br>
+                    <select ng-model="data.month" class="outline-0 dropdown-box active">
+                        <option value="1">January</option>
+                        <option value="2">February</option>
+                        <option value="3">March</option>
+                        <option value="4">April</option>
+                        <option value="5">May</option>
+                        <option value="6">June</option>
+                        <option value="7">July</option>
+                        <option value="8">August</option>
+                        <option value="9">September</option>
+                        <option value="10">October</option>
+                        <option value="11">November</option>
+                        <option value="12">December</option>
+                    </select>
+                    <span class="year">{{data.year}}</span>
+                </p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<business-footer send="sendData()" forward="forward"></business-footer>

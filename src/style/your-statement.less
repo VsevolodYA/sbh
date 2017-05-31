@@ -1,0 +1,84 @@
+.your-statement {
+
+  .input-box {
+
+    .label {
+      font-size: 18px;
+    }
+
+    input {
+      font-size: 18px;
+      padding-bottom: 8px;
+    }
+  }
+
+  .dropdown-box {
+    font-size: 18px;
+  }
+
+  .row-flex {
+    align-items: baseline;
+    justify-content: flex-start;
+  }
+
+  .line-text {
+    color: #576875;
+    font-size: 18px;
+    line-height: 36px;
+  }
+
+  .first-select {
+    width: 120px;
+  }
+
+  .second-input {
+    width: 450px;
+  }
+
+  .fourth-input {
+    width: 350px;
+  }
+
+  .third-select {
+    width: 60px;
+  }
+
+  .fifth-select {
+    width: 150px;
+  }
+
+  .sixth-input {
+    width: 80%;
+
+    & + label {
+      left: 15px;
+    }
+  }
+
+  @media(max-width: 768px) {
+
+    .input-box {
+
+      .label {
+        top: 50px;
+      }
+
+    }
+
+    .third-select + .input-box {
+      width: 70%;
+
+      .label {
+        top: 0;
+      }
+    }
+
+    .first-select {
+      width: 60%;
+    }
+
+    .second-input, .fourth-input {
+      width: 100%;
+    }
+  }
+}

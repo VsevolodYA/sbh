@@ -1,0 +1,50 @@
+<div class="business-page your-statement step3-summary container" scroll-top>
+
+    <div class="panel panel-default margin-t-40 margin-b-140">
+
+        <div class="panel-body content-box">
+
+            <button-switch visible="showContent"></button-switch>
+
+            <h3 class="logo padding-l-15">business<span class="aqua-green">summary</span></h3>
+
+            <div class="row sample-show-hide" ng-hide="showFormBlock">
+                <div class="col-md-11 padding-l-r-30 margin-b-24">
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu pharetra
+                        elit, a
+                        dapibus ex. In venenatis tempor odio, non ultrices lectus</p>
+                </div>
+            </div>
+
+            <div class="row sample-show-hide" ng-hide="showFormBlock">
+
+                <div class="col-md-12">
+
+                    <div class="col-md-12 col-lg-10 margin-b-50 padding-l-100 padding-r-30">
+                        <div class="grey-circle-box">
+                            <div class="grey-circle">1</div>
+                        </div>
+
+                        <p style="padding-top: 10px;">
+
+                            <span class="aqua-green">{{data.businessName}}</span> does <span
+                                class="aqua-green">{{data.second}}</span> for
+                            <span class="aqua-green">{{data.fourth}}</span> on a
+                            <span class="aqua-green">{{fifth[+data.fifth]}}</span> scale because <span
+                                class="aqua-green">I will grow my business this year I will be able to
+                            {{data.privilegeInfo.result}}</span> and I am committed to
+                            <span class="aqua-green">{{privilegesData.second[+data.privilegeInfo.text]}} {{data.privilegeInfo.additionalText}}</span>.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<business-footer send="sendData()" forward="forward"></business-footer>
